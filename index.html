@@ -122,8 +122,15 @@
       text-decoration-color: var(--accent);
     }
 
+    /* an entry that is only its address */
     .project + .project {
-      margin-top: 1rem;
+      margin-top: 0.25rem;
+    }
+
+    .project:hover .where:only-child {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.25em;
     }
 
     .social {
@@ -181,13 +188,11 @@
 
     <section aria-labelledby="for-fun">
       <h2 id="for-fun">For fun</h2>
-      <a class="project" href="https://elegans.online/">
-        <span class="title"><i>C. elegans</i> simulator</span>
-        <span class="where">elegans.online</span>
-      </a>
       <a class="project" href="https://colby.website/">
-        <span class="title">Pixel-art versions of this page</span>
         <span class="where">colby.website</span>
+      </a>
+      <a class="project" href="https://elegans.online/">
+        <span class="where">elegans.online</span>
       </a>
     </section>
   </main>
